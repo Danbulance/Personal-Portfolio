@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", sans-serif, Arial;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hamburger menu */
+
+.menu-toggle {
+  cursor: pointer;
+  padding: 15px;
+  width: 60px;
+  position: relative;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  cursor: pointer;
+  border-radius: 4px;
+  height: 2px;
+  width: 36px;
+  background: #adefd1ff;
+
+  position: absolute;
+  left: 0;
+  transition: all 200ms ease;
+}
+
+.line-1 {
+  top: 0;
+}
+
+.line-2 {
+  top: 11px;
+}
+
+.line-3 {
+  top: 22px;
+}
+
+.menu-toggle-active .line-2 {
+  background-color: transparent !important;
+}
+
+.menu-toggle-active .line-1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.menu-toggle-active .line-3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+/* Mobile Menu */
+.menu-scroll-overflow {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Section One */
+.section-one {
+  background: linear-gradient(43deg, #00203fff 9%, #adefd1ff 80%);
+
+  @media (max-width: 640px) {
+    background: linear-gradient(43deg, #adefd1ff 9%, #00203fff 80%);
+  }
+}
+
+/* Section Four */
+#image-holder {
+  @media (max-width: 770px) {
+    height: 50%;
+  }
+}
+
+/* KEYFRAMES */
+
+.homepage-icon {
+  display: inline-block;
+  perspective: 1000px; /* Ensures 3D effect */
+  animation: flip 5s infinite; /* Adjust the duration and iteration as needed */
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* NAV BUTTON */
+.main-nav {
+  animation: fadeInAndMove 5s forwards; /* Adjust duration as needed */
+  opacity: 0; /* Start as fully transparent */
+}
+
+@keyframes fadeInAndMove {
+  0% {
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* End fully visible */
+  }
+}
+
+/* BUTTON */
+/* .main-button {
+  position: relative;
+  font-size: 1rem;
+  padding: 20px 60px;
+  border: 1px solid red;
+  border-radius: 50px;
+  color: #ccf383;
+  text-decoration: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.main-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #4833d4;
+  transition: left 0.3s ease;
+  border-radius: 50px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.main-button:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.main-button span {
+  position: relative;
+  z-index: 1;
+} */
+
+/* FOOTER */
+.footer-list li a {
+  position: relative;
+}
+
+.footer-list li a:after {
+  content: "";
+  width: 20%;
+  min-width: 1em;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  transform: translateX(0);
+  transform-origin: left;
+  transition: 0.3s;
+  position: absolute;
+  pointer-events: none;
+  background-color: currentColor;
+}
+
+.footer-list li a:hover:after {
+  content: "";
+  width: 20%;
+  min-width: 1em;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transform-origin: left;
+  transition: 0.3s;
+  position: absolute;
+  pointer-events: none;
+  background-color: currentColor;
+  opacity: 0.2;
+  transform: translateX(0.5em);
+}
+
+/* Menu bar */
+/* #menu-mobile {
+  @media (max-width: 640px) {
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+} */
+
+/* SKILLS SECTION */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip:hover {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.flip-clicked {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.front {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px #000;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px #000;
+}
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip:hover {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.front {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: salmon;
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px #000;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  background: turquoise;
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px #000;
+} */
+
+/* Colors for the DL Icon on the sub pages */
+.desktop-icon-color {
+  color: #00203fff;
+}
+
+.mobile-icon-color {
+  color: #00203fff;
+}
+
+.test-test {
+  color: #adefd1ff;
+}
+
+/* Colors for the Menu on the sub pages */
+.menu-desktop-color {
+  background-color: #00203fff;
+}
+
+.menu-mobile-color {
+  background-color: #adefd1ff;
+}
