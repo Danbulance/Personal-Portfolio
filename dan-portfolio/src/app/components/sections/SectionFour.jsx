@@ -57,8 +57,10 @@ const SectionFour = React.forwardRef(({ id }, ref) => {
             <br />
             <p ref={paraTwoRef} className="text-white opacity-0 translate-y-8">
               My main role is a content editor for 37 sites worldwide for Visa and also I am involved in making Visa promotions for various countries and campaigns from Disney to the Paris Olympics
-              and Paralympics 2024. The promotions are made from a mixture of html, css, javascript, bootstrap and Vue. I am a content editor for Quintet across their sites using a mixture of ready
-              made components and code to make the pages. I've had a small amount of experience using Wordpress with Waterside and made some components for Cohesity.
+              and Paralympics 2024. I have recently been given the job title role of Junior Developer which I am very proud of to show my hard work has paid off. The promotions I'm involved in are
+              made from a mixture of HTML, CSS, Javascript, Bootstrap and Vue. I am a content editor for Quintet across their sites using a mixture of ready made components and code to make the pages.
+              I've had a small amount of experience using Wordpress with Waterside and made some components for Cohesity. In addition I have used Svelte in work and outside of work to get familiar and
+              practice with this framework.
             </p>
           </div>
           <div ref={imageRef} id="image-holder" className="md:w-1/2 w-full flex justify-center opacity-0 translate-y-14">
