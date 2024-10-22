@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 
 export default function MenuIcon({ menuColors, background, menuClicked, setMenuClicked }) {
@@ -43,6 +43,7 @@ export default function MenuIcon({ menuColors, background, menuClicked, setMenuC
     });
   };
 
+  // Open and close menu
   const handleClick = () => {
     if (menuClicked) {
       closeMenu();
@@ -52,9 +53,24 @@ export default function MenuIcon({ menuColors, background, menuClicked, setMenuC
     setMenuClicked(!menuClicked);
   };
 
+  // Close the menu when resizing
+  useEffect(() => {
+    const handleResize = () => {
+      if (menuClicked) {
+        closeMenu(); // Close the menu when the screen is resized
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [menuClicked]);
+
   return (
     <div>
-      <section className="relative z-10 ">
+      <section className="relative z-10" aria-label="Open and Close Menu">
         <div className={`menu-toggle ${menuClicked ? "menu-toggle-active" : ""}`} onClick={handleClick}>
           <span style={{ background }} className={`line-1 ${menuColors ? "menu-desktop-color" : ""}`}></span>
           <span style={{ background }} className={`line-2 ${menuColors ? "menu-desktop-color" : ""}`}></span>

@@ -74,7 +74,7 @@ export default function TwoColumn() {
     <div ref={firstSlideRef} className="inner flex flex-col justify-center h-full flex-wrap md:flex-nowrap">
       <div>
         <div ref={leftTitleRef} className="lg:px-24 px-12 md:w-1/2 w-full md:pb-0 pb-10 opacity-0 translate-y-14">
-          <h2 className="sm:text-5xl text-4xl text-[#00203fff] pb-4 font-bold">Building Apps for work fun </h2>
+          <h2 className="text-[#00203fff] pb-4 font-bold text-4xl clg:text-5xl">Building Apps for work fun </h2>
           <p ref={leftParaRef} className="sm:text-base text-sm pb-5 opacity-0 translate-y-1">
             We play the Magic The Gathering card game at work during lunch. After using cardboard life point counters and then finding an app from the application store I decided to make a life point
             counter app myself. It took a lot of time and effort but turned out to be a success and myself and colleagues use it now whilst we play the game.
@@ -87,13 +87,13 @@ export default function TwoColumn() {
       </div>
       <div className="flex justify-end">
         <div ref={rightTitleRef} className="lg:px-24 px-12 md:w-1/2 w-full opacity-0 translate-y-14">
-          <h2 className="sm:text-5xl text-4xl text-[#00203fff] pb-4 font-bold">The Power of AI </h2>
+          <h2 className="text-[#00203fff] pb-4 font-bold text-4xl clg:text-5xl">The Power of AI </h2>
           <p ref={rightParaRef} className="sm:text-base text-sm pb-5 opacity-0 translate-y-1">
             With the world going crazy over and adapting to new AI technology, I wanted to make an app which incorporated AI somehow. I decided to build a Harry Potter Hogwarts House picker app. By
             connecting the site with ChatGPT I managed to send the users inputs to ChatGPT and then returned the result to show the user.
           </p>
           <div ref={rightButtonRef} className="opacity-0 translate-y-12">
-            <Button text="See the Harry Potter App" hyperLink="/about" target={true} />
+            <Button text="See the Harry Potter App" hyperLink="https://ai-sorting-house-app.vercel.app/" target={true} />
           </div>
         </div>
       </div>

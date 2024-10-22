@@ -55,7 +55,7 @@ export default function Page() {
               />
             </div>
             <div className="pt-6 px-12 md:px-0">
-              <Button text="See the Harry Potter App" hyperLink="/about" target={true} />
+              <Button text="See the Harry Potter App" hyperLink="https://ai-sorting-house-app.vercel.app/" target={true} />
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ module.exports = {
       sm: "640px", // Tailwind's default 'sm'
       md: "768px", // Tailwind's default 'md'
       lg: "1024px", // Tailwind's default 'lg'
+      clg: "1150px", // Custom screen size @media (min-width: 1150px)
       xl: "1280px", // Tailwind's default 'xl'
       "2xl": "1536px", // Tailwind's default '2xl'
     },

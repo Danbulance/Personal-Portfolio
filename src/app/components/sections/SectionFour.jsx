@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import placeholderTwo from "../../images/placeholder2.png";
+import clientLogos from "../../images/client-logos.jpg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -63,8 +64,8 @@ const SectionFour = React.forwardRef(({ id }, ref) => {
               practice with this framework.
             </p>
           </div>
-          <div ref={imageRef} id="image-holder" className="md:w-1/2 w-full flex justify-center opacity-0 translate-y-14">
-            <Image src={placeholderTwo} alt="Placeholder Image" />;
+          <div ref={imageRef} id="image-holder" className="md:w-1/2 w-full flex justify-center opacity-0 translate-y-14 p-10">
+            <Image src={clientLogos} alt="Collage of company logos" />;
           </div>
         </div>
       </div>
