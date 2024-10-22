@@ -70,7 +70,9 @@ const Footer = React.forwardRef(({ id }, ref) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">CV</a>
+                  <a href="../../test-cv-22-10-24.pdf" target="_blank">
+                    CV
+                  </a>
                 </li>
               </ul>
             </div>
@@ -95,7 +97,9 @@ const Footer = React.forwardRef(({ id }, ref) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">CV</a>
+                  <a href="../../test-cv-22-10-24.pdf" target="_blank">
+                    CV
+                  </a>
                 </li>
               </ul>
             </div>
