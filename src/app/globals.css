@@ -342,3 +342,13 @@ body {
 .menu-mobile-color {
   background-color: #adefd1ff;
 }
+
+/* 3 Col */
+/* .top-space {
+  padding-top: calc(50% - (316px / 2));
+  padding-bottom: calc(50% - (316px / 2));
+  @media (max-width: 770px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+} */
