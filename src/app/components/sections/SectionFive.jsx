@@ -67,7 +67,7 @@ const SectionFive = React.forwardRef(({ id }, ref) => {
     setEnterMessage(newMessage);
   };
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = (event) => {
     // timeout to allow form submission first
     setTimeout(() => {
       setEnterName("");
@@ -90,7 +90,7 @@ const SectionFive = React.forwardRef(({ id }, ref) => {
           <p ref={paraSmallRef} className="text-xl sm:text-center text-left sm:hidden opacity-0 translate-y-8">
             Please feel free to get in touch with me via the form below...
           </p>
-          <form onSubmit={handleFormSubmit} className="sm:w-1/2 pt-16" action="https://formspree.io/f/xnnakdgy" method="POST" target="_blank">
+          <form onSubmit={handleFormSubmit} id="myForm" className="sm:w-1/2 pt-16" action="https://formspree.io/f/xnnakdgy" method="POST" target="_blank">
             {/* ROW ONE */}
             <div className="sm:flex justify-between flex-wrap">
               <div className="sm:w-[45%]">
@@ -147,7 +147,10 @@ const SectionFive = React.forwardRef(({ id }, ref) => {
               <button
                 ref={buttonRef}
                 type="submit"
-                class={`relative inline-block text-[#00203FFF] px-6 py-3 font-semibold border-2 border-[#00203FFF] rounded overflow-hidden group opacity-0 translate-y-8`}
+                data-sitekey="6LcJvG4qAAAAADJVFvfh_X5pawFIHmCb4LH8rjIj"
+                data-callback="onSubmit"
+                data-action="submit"
+                class={`g-recaptcha relative inline-block text-[#00203FFF] px-6 py-3 font-semibold border-2 border-[#00203FFF] rounded overflow-hidden group opacity-0 translate-y-8`}
               >
                 <span class="relative z-10 transition-transform duration-300 ease-in-out group-hover:text-white">Send message</span>
                 <span class="absolute inset-0 bg-[#00203FFF] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>

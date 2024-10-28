@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import Tile from "./components/Tile";
+import { Analytics } from "@vercel/analytics/react";
 
 import SectionOne from "./components/sections/SectionOne";
 import SectionTwo from "./components/sections/SectionTwo";
@@ -68,6 +68,7 @@ export default function Home() {
 
   return (
     <div className="relative">
+      <Analytics />
       <Header ref={headerRef} activeSection={activeSection} />
       <PageNav />
       <SectionOne id="sectionOne" ref={sectionRefs.sectionOne} />
