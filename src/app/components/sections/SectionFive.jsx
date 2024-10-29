@@ -67,7 +67,7 @@ const SectionFive = React.forwardRef(({ id }, ref) => {
     setEnterMessage(newMessage);
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = () => {
     // timeout to allow form submission first
     setTimeout(() => {
       setEnterName("");

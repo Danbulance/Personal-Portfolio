@@ -65,22 +65,22 @@ export default function Page() {
         <div className="w-full h-auto">
           <div className=" h-full">
             <div className="flex justify-around h-full flex-wrap">
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={html} altText="html icon" skillText="HTML" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={javascript} altText="javascript icon" skillText="JAVASCRIPT" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={emails} altText="emails icon" skillText="EMAILS" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={mjml} altText="mjml icon" skillText="MJML EMAILS" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={accessibility} altText="accessibility icon" skillText="ACCESSIBILITY" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={vercel} altText="vercel icon" skillText="VERCEL" showSkills={showSkills} />
               </div>
             </div>
@@ -91,22 +91,22 @@ export default function Page() {
         <div className="w-full h-auto my-12">
           <div className=" h-full">
             <div className="flex justify-around h-full flex-wrap">
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={react} altText="react icon" skillText="REACT" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={next} altText="next js icon" skillText="NEXT JS" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3  p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6  p-2">
                 <SkillBox image={svelte} altText="svelte icon" skillText="SVELTE" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3  p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6  p-2">
                 <SkillBox image={svelteKit} altText="svelte kit icon" skillText="SVELTE KIT" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={bootstrap} altText="bootstrap icon" skillText="BOOTSTRAP" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={wordpress} altText="wordpress icon" skillText="WORDPRESS" showSkills={showSkills} />
               </div>
             </div>
@@ -117,22 +117,22 @@ export default function Page() {
         <div className="w-full h-auto mb-24">
           <div className=" h-full">
             <div className="flex justify-around h-full flex-wrap">
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={css} altText="css icon" skillText="CSS" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={sass} altText="sass icon" skillText="SASS" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={tailwind} altText="tailwind icon" skillText="TAILWIND" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={gsap} altText="gsap icon" skillText="GSAP" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={grid} altText="grid icon" skillText="GRID" showSkills={showSkills} />
               </div>
-              <div className=" md:w-1/6 w-1/3 p-2">
+              <div className="w-1/2 sm:w-1/3 md:w-1/6 p-2">
                 <SkillBox image={cms} altText="cms icon" skillText="CMS" showSkills={showSkills} />
               </div>
             </div>
