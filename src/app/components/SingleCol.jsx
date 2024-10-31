@@ -2,7 +2,7 @@ export default function SingleCol({ title, text }) {
   return (
     <div>
       <h3 className="text-4xl font-semibold text-[#00203FFF] pb-3">{title}</h3>
-      <p>{text}</p>
+      <p className="text-[#00203fff]">{text}</p>
     </div>
   );
 }

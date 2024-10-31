@@ -101,17 +101,21 @@ export default function MenuIcon({ menuColors, background, menuClicked, setMenuC
           <div ref={bottomListRef} className="pr-12 pb-20 opacity-0 translate-y-12">
             <ul className="flex justify-between">
               <li>
-                <a href="https://github.com/danbulance" target="_blank">
+                <a href="https://github.com/danbulance" target="_blank" aria-label="Open Dan's Github account">
                   GH
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  aria-label="Open Dan's Linkedin account"
+                >
                   LN
                 </a>
               </li>
               <li>
-                <a href="../../dan-cv.pdf" target="_blank">
+                <a href="../../dan-cv.pdf" target="_blank" aria-label="Open Dan's curriculum vitae">
                   CV
                 </a>
               </li>
@@ -122,106 +126,3 @@ export default function MenuIcon({ menuColors, background, menuClicked, setMenuC
     </div>
   );
 }
-
-// import { useState, useRef } from "react";
-
-// import gsap from "gsap";
-
-// export default function MenuIcon({ background }) {
-//   const [menuClicked, setMenuClicked] = useState(false);
-
-//   const menuHolder = useRef();
-//   const topListRef = useRef();
-//   const bottomListRef = useRef();
-
-//   const handleClick = () => {
-//     setMenuClicked((prev) => !prev);
-
-//     if (!menuClicked) {
-//       gsap.to(menuHolder.current, {
-//         opacity: 1,
-//         width: "300px",
-//         height: "460px",
-//         duration: 1,
-//         ease: "power2.out",
-//       });
-
-//       gsap.to(topListRef.current, {
-//         opacity: 1,
-//         duration: 1,
-//         translateY: 0,
-//         ease: "power2.out",
-//         delay: 0.5,
-//       });
-
-//       gsap.to(bottomListRef.current, {
-//         opacity: 1,
-//         duration: 1,
-//         translateY: 0,
-//         ease: "power2.out",
-//         delay: 0.5,
-//       });
-//     } else {
-//       // Close the menu (same for both desktop and mobile)
-//       gsap.to(menuHolder.current, {
-//         opacity: 0,
-//         width: "0px",
-//         height: "0px",
-//         duration: 1,
-//         ease: "power2.out",
-//       });
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <section className="relative z-10 ">
-//         <div className={`menu-toggle ${menuClicked ? "menu-toggle-active" : ""}`} onClick={handleClick}>
-//           <span style={{ background }} className="line-1"></span>
-//           <span style={{ background }} className="line-2"></span>
-//           <span style={{ background }} className="line-3"></span>
-//         </div>
-//       </section>
-
-//       <div id="menu-mobile" className="absolute top-5 right-10 opacity-0 w-0 h-0 bg-white text-[#00203FFF] hidden sm:block" ref={menuHolder}>
-//         <nav className="main-nav flex flex-col justify-between h-full pl-12">
-//           {/* Block One */}
-//           <div ref={topListRef} className="pt-20 text-xl opacity-0 translate-y-12">
-//             <ul>
-//               <li>
-//                 <a href="/">Home</a>
-//               </li>
-//               <li className="pt-4">
-//                 <a href="/about">About</a>
-//               </li>
-//               <li className="pt-4">
-//                 <a href="/projects">Projects</a>
-//               </li>
-//               <li className="pt-4">
-//                 <a href="/#sectionFive">Contact</a>
-//               </li>
-//             </ul>
-//           </div>
-//           {/* Block Two */}
-//           <div ref={bottomListRef} className="pr-12 pb-20 opacity-0 translate-y-12">
-//             <ul className="flex justify-between">
-//               <li>
-//                 <a href="https://github.com/danbulance" target="_blank">
-//                   GH
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-//                   LN
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#">CV</a>
-//               </li>
-//             </ul>
-//           </div>
-//         </nav>
-//       </div>
-//     </div>
-//   );
-// }

@@ -83,11 +83,11 @@ const SectionFive = React.forwardRef(({ id }, ref) => {
           <h2 ref={titleRef} className="sm:text-5xl text-3xl pb-5 font-bold text-[#00203fff] opacity-0 translate-y-12">
             Drop me a message!
           </h2>
-          <p ref={paraRef} className="text-2xl sm:text-center text-left hidden sm:block opacity-0 translate-y-8">
+          <p ref={paraRef} className="text-[#00203fff] text-2xl sm:text-center text-left hidden sm:block opacity-0 translate-y-8">
             Please feel free to get in touch with me
             <br /> via the form below...
           </p>
-          <p ref={paraSmallRef} className="text-xl sm:text-center text-left sm:hidden opacity-0 translate-y-8">
+          <p ref={paraSmallRef} className="text-[#00203fff] text-xl sm:text-center text-left sm:hidden opacity-0 translate-y-8">
             Please feel free to get in touch with me via the form below...
           </p>
           <form onSubmit={handleFormSubmit} id="myForm" className="sm:w-1/2 pt-16" action="https://formspree.io/f/xnnakdgy" method="POST" target="_blank">

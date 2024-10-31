@@ -60,17 +60,21 @@ const Footer = React.forwardRef(({ id }, ref) => {
             <div className="w-1/2 text-sm pl-4 block xsm:hidden sm:text-left md:text-xl lg:w-1/3">
               <ul className="footer-list">
                 <li>
-                  <a href="https://github.com/danbulance" target="_blank">
+                  <a href="https://github.com/danbulance" target="_blank" aria-label="Open Dan's Github account">
                     GH
                   </a>
                 </li>
                 <li className="py-4">
-                  <a href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank"
+                    aria-label="Open Dan's Linkedin account"
+                  >
                     LN
                   </a>
                 </li>
                 <li>
-                  <a href="../../dan-cv.pdf" target="_blank">
+                  <a href="../../dan-cv.pdf" target="_blank" aria-label="Open Dan's curriculum vitae">
                     CV
                   </a>
                 </li>
@@ -87,17 +91,21 @@ const Footer = React.forwardRef(({ id }, ref) => {
             <div className="pt-12 xsm:block hidden">
               <ul className="footer-list flex">
                 <li>
-                  <a href="https://github.com/danbulance" target="_blank">
+                  <a href="https://github.com/danbulance" target="_blank" aria-label="Open Dan's Github account">
                     GH
                   </a>
                 </li>
                 <li className="px-10">
-                  <a href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/daniel-letch-778b08168?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank"
+                    aria-label="Open Dan's Linkedin account"
+                  >
                     LN
                   </a>
                 </li>
                 <li>
-                  <a href="../../dan-cv.pdf" target="_blank">
+                  <a href="../../dan-cv.pdf" target="_blank" aria-label="Open Dan's curriculum vitae">
                     CV
                   </a>
                 </li>

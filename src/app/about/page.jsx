@@ -30,7 +30,7 @@ export default function Page() {
   };
 
   return (
-    <>
+    <div className="about-page">
       <h1 className="text-4xl font-bold text-[#00203FFF] text-center pt-24 sm:text-6xl">About me</h1>
 
       <div className="inner">
@@ -139,6 +139,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
