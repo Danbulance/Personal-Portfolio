@@ -345,7 +345,7 @@ body {
 
 /* DARK Browser Styles */
 @media (prefers-color-scheme: dark) {
-  .about-page {
-    background-color: #f9f9f9;
+  body.about-page-body {
+    background-color: #f9f9f9; /* Dark background color for the About page */
   }
 }

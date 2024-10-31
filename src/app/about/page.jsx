@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SkillBox from "../components/SkillBox";
 import html from "../images/html.png";
 import css from "../images/css.png";
@@ -22,6 +22,16 @@ import cms from "../images/cms.png";
 import grid from "../images/grid.png";
 
 export default function Page() {
+  useEffect(() => {
+    // Add a class to the body element when the About page is rendered
+    document.body.classList.add("about-page-body");
+
+    // Clean up by removing the class when leaving the page
+    return () => {
+      document.body.classList.remove("about-page-body");
+    };
+  }, []);
+
   const [showSkills, setShowSkills] = useState(false);
 
   const handleSkillsClick = () => {
