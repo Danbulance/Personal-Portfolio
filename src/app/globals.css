@@ -349,3 +349,9 @@ body {
     background-color: #f9f9f9; /* Dark background color for the About page */
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body.projects-page-body {
+    background-color: #f9f9f9; /* Dark background color for the About page */
+  }
+}

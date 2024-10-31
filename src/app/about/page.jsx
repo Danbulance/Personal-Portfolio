@@ -22,6 +22,7 @@ import cms from "../images/cms.png";
 import grid from "../images/grid.png";
 
 export default function Page() {
+  // Browser Dark Mode Styling Fix
   useEffect(() => {
     // Add a class to the body element when the About page is rendered
     document.body.classList.add("about-page-body");
@@ -32,6 +33,7 @@ export default function Page() {
     };
   }, []);
 
+  // Logic For Skill Icons
   const [showSkills, setShowSkills] = useState(false);
 
   const handleSkillsClick = () => {
@@ -45,22 +47,22 @@ export default function Page() {
 
       <div className="inner">
         <div className="pt-10">
-          <p className="text-center">
+          <p className="text-center text-[#00203FFF]">
             My name is Dan and I'm an aspiring front end developer. My main role in my current company is content editor. However, I have recently been given the new title of junior developer, which
             has given me a great insight into the world of coding and carry out work on various projects. My knowledge has grown a lot from when I first started, as I barely knew how to write a basic
             sentence and style elements... to now where I feel fairly confident and competent about working on websites and projects for clients.
           </p>
-          <p className="text-center pt-10">
+          <p className="text-center pt-10 text-[#00203FFF]">
             I've been lucky that I have learned front end developer work from the current developers in my company and so this has given me a mixed role of content editor / junior developer. Now I
             feel I'm ready to go for a full time junior developer position so I can learn and grow at a much faster rate. I've been putting in a lot of hours after work to hone my skills and improve
             my ability to make websites and apps.
           </p>
-          <p className="text-center pt-10">
+          <p className="text-center pt-10 text-[#00203FFF]">
             I have managed to build up a good level of skills and knowledge all at varying levels through a mixture of my job role and mainly self study. I'm very ambitious and striving to learn more
             and succeed in the world of development. My main focus being front end however I would like to learn more about back end development to understand the entire process more and also to
             unlock the potential of becoming a full stack developer down the line.
           </p>
-          <p className="text-center pt-10">Below I have listed the majority of my skills and knowledge in sections of general structures, frameworks and styling methods.</p>
+          <p className="text-center pt-10 text-[#00203FFF]">Below I have listed the majority of my skills and knowledge in sections of general structures, frameworks and styling methods.</p>
         </div>
 
         <div className="flex justify-center py-16">
